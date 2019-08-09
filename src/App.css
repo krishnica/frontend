@@ -40,21 +40,59 @@
 .App-logo-div {
  /*animation: App-logo-spin infinite 20s linear;*/
   float: left;
-  padding-left: 100px;
+  padding-left: 200px;
   /*position: fixed;*/
 }
+
+.App-logo-div-back {
+  /*animation: App-logo-spin infinite 20s linear;*/
+   float: left;
+   padding-left: -100px;
+   /*position: fixed;*/
+ }
+
+.App-back {
+  float:right;
+  height: 120px;
+  margin-right: -100px;
+  position: fixed;
+ /* z-index: -1;*/
+ }
 
 .App-logo-txt {
   /* animation: App-logo-spin infinite 20s linear;*/
   /* float: right;*/
-  margin-left: 250px;
+  margin-left: 350px;
+  margin-top: -20px;
+   padding-right: 500px;
+   font-size: 40px;
+   font-family: Segoe UI;
+   position: fixed;
+   z-index: 1;
+  
+   /*display: block;*/   
+ }
+ .App-logo-txt2 {
+  /* animation: App-logo-spin infinite 20s linear;*/
+   padding-left: 180px;
+   font-family: Gabriola;  
+   font-size: 30px;
+   font-style: italic;
+  /* padding-top: 0;*/
+  position: fixed;    
+ }
+
+ .App-logo-txt-back {
+  /* animation: App-logo-spin infinite 20s linear;*/
+  /* float: right;*/
+  margin-left: 100px;
   margin-top: -20px;
    padding-right: 720px;
    font-size: 40px;
    font-family: Segoe UI;
    /*display: block;*/   
  }
- .App-logo-txt2 {
+ .App-logo-txt2-back {
   /* animation: App-logo-spin infinite 20s linear;*/
    padding-left: 180px;
    font-family: Gabriola;  

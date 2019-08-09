@@ -7,6 +7,7 @@ import {Employees} from "./Employees";
 import {Suppliers} from "./Suppliers";
 import {Test} from "./Test";
 import logo from "./logob.png";
+import report from './report';
 
 
 class App extends Component {
@@ -36,10 +37,10 @@ class App extends Component {
           <Switch>
           <Redirect to="/login"/>
           </Switch>:
-            <div style={{display:"flex", position:"fixed", width:"calc(100% - 40px)", justifyContent:"space-between", padding:"20px", color:"white", backgroundColor:"#03a9f4", marginTop:"150px"}}>
+            <div style={{display:"flex", position:"fixed", width:"calc(100% - 40px)", justifyContent:"space-between", padding:"20px", color:"white", backgroundColor:"#c02906", marginTop:"155px"}}>
               <NavLink style={{color:"white", textDecoration:"none", cursor:"pointer", fontWeight:"bold"}} to="/employees">Employees</NavLink>
               <NavLink style={{color:"white", textDecoration:"none", cursor:"pointer", fontWeight:"bold"}} to="/suppliers">Suppliers</NavLink>
-              <NavLink style={{color:"white", textDecoration:"none", cursor:"pointer", fontWeight:"bold"}} to="/suppliers">Weekly Reports</NavLink>
+              <NavLink style={{color:"white", textDecoration:"none", cursor:"pointer", fontWeight:"bold"}} to="/report">Weekly Reports</NavLink>
               <div style={{color:"white", textDecoration:"none", cursor:"pointer", fontWeight:"bold"}} onClick={()=>{this.setState({isLoggedin:false}); localStorage.clear()}}>Logout</div>
             </div>
           }
@@ -48,6 +49,7 @@ class App extends Component {
             <Route exact path="/register" component={Register}/>
             <Route exact path="/employees" render={()=><Employees owner={this.state.owner}/>}/>
             <Route exact path="/suppliers" render={()=><Suppliers owner={this.state.owner}/>}/>
+            <Route exact path="/report" component={report}/>
           </Switch>
           </div>
       </React.Fragment>

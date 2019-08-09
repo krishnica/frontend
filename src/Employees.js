@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { apiUrl } from "./util";
+import './App.css';
+import back from "./book.jpg";
 
 export class Employees extends React.Component {
     constructor() {
@@ -90,6 +92,7 @@ export class Employees extends React.Component {
     render() {
         return (
             <div style={{ padding: "20px" }}>
+                <div className="App-back"><img src={back} /></div>
                 <div>
                     <div style={{color:"white", backgroundColor:"#03a9f4", fontWeight:"bold",cursor:"pointer", padding:"10px",width:"200px", marginBottom:"20px", marginTop:"200px"}} onClick={()=>{
                         this.setState({registerClicked:true});
